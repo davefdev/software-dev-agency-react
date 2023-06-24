@@ -13,24 +13,28 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <div className="logo-container">
-          logo
-          {/* <img className="logo">logo></img> */}
-        </div>
+        <div className="nav__wrapper">
+          <div className="logo-container">
+            logo
+            {/* <img className="logo">logo></img> */}
+          </div>
 
-        <div className="navigation">
-          <ul>
-            {navLinks.map((link) => {
-              <li key={link.url}>
-                <a href={link.url}>{link.name}</a>
-              </li>;
-            })}
-          </ul>
-        </div>
-        <div className="light__mode">
-          <span>
-            <i class="ri-sun-line"></i>Light mode
-          </span>
+          <div className="navigation">
+            <ul>
+              {navLinks.map((link, index) => {
+                <li className="nav__item">
+                  <a href={link.url} className="nav__link">
+                    {link.name} console.log(navLinks);
+                  </a>
+                </li>;
+              })}
+            </ul>
+          </div>
+          <div className="light__mode">
+            <span>
+              <i class="ri-sun-line"></i>Light mode
+            </span>
+          </div>
         </div>
       </div>
     </header>
