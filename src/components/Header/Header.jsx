@@ -24,7 +24,7 @@ const Header = () => {
               {navLinks.map((link, index) => (
                 <li key={index} className="nav__item">
                   <a href={link.url} className="nav__link">
-                    {link.name} console.log(navLinks);
+                    {link.name} ;
                   </a>
                 </li>
               ))}
