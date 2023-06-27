@@ -84,3 +84,6 @@ h1, h2 {
   margin: auto;
 }
 
+.description{
+  color: var(--small-text-color);
+}
